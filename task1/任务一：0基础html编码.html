@@ -2,7 +2,7 @@
 <html>
 <meta charset="utf-8" />
 <head>
-	<title>任务1：0基础html编码</title>
+	<title>任务一：0基础html编码</title>
 </head>
 <body>
 <div id="body_head">
@@ -114,17 +114,17 @@
 		<h1>这里以后是一个侧栏，这是侧栏的标题</h1>
 		<form method="post" name="register">
 			<h2>侧栏注册窗口</h2>
-			<lable>请输入邮箱地址：</lable>
-			<input type="text" name="email" placeholder="这是一个文本输入框" />
+			<lable for="mail">请输入邮箱地址：</lable>
+			<input type="text" id="mail" name="email" placeholder="这是一个文本输入框" />
 			<br />
-			<lable>邮箱地址请按要求格式输入</lable><br />
-			<lable>请输入密码：</lable>
-			<input type="password" name="password" placeholder="这是密码输入框" />
+			<p>邮箱地址请按要求格式输入</p>
+			<lable for="pw1">请输入密码：</lable>
+			<input type="password" id="pw1" name="password" placeholder="这是密码输入框" />
 			<br />
-			<lable>请重复输入密码：</lable>
-			<input type="password" name="password" placeholder="这是密码输入框" />
+			<lable for="pw2">请重复输入密码：</lable>
+			<input type="password" id="pw2" name="password" placeholder="这是密码输入框" />
 			<br />
-			<lable>密码请为6-16位英文数字</lable><br />
+			<p>密码请为6-16位英文数字</p>
 
 			<lable>性别：</lable>
 			<input type="radio" name="sex" value="male" checked="checked" />男
