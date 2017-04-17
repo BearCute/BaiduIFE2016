@@ -1,0 +1,73 @@
+*{
+	margin:0;
+	padding:0;
+	/*bix-sizing是一个width/height计算包不包含内边距和border的问题*/
+	box-sizing:border-box;
+}
+
+#main{
+	border:1px solid #999;
+	background-color:#eee;
+	padding:20px;
+	margin:20px;
+	overflow:auto;
+}
+
+div{
+	border:1px solid #999;
+	background-color:#fff;
+	padding:20px;
+}
+
+img{
+	width:80px;
+	height:80px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+/*---------第一栏--------------*/
+#team{
+	float:left;
+	width:200px;
+	position:relative;
+}
+
+#team span{
+	font-size:15px;
+	font-weight:bold;
+	position:absolute;
+	right:20px;
+	top:20px;
+}
+
+/*----------第二栏-------------*/
+#summary {	
+	margin:0 140px 0 220px;
+}
+
+#summary article{
+	text-indent:32px;
+}
+
+/*-----------第三栏------------*/
+#team_member{
+	width:120px;
+/*	如果这里不使用浮动而是使用相对绝对位置
+	通过计算的方式定位第三栏 
+	如果发生内容溢出 则会自动生成滚动条*/
+	float:right;
+	padding:0;
+}
+
+#team_member ul{
+	list-style-type:none;
+}
+
+#team_member ul li {
+	margin:20px;
+}
+
+
+
+
