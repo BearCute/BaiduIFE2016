@@ -1,0 +1,54 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+.rectangle{
+	width:400px;
+	height:200px;
+	background-color:#ddd;
+	position:absolute;	
+	top:50%;
+	left:50%;
+	/*这个时候是边缘算起*/
+	/*所以需要计算到中心*/
+	margin-top:-100px;
+	margin-left:-200px;
+	/*这里很有意思 外边距是负数*/
+	/*position为absolute即使相对于它的父级元素而言*/
+	/*它的外边距即是父级元素的内边距*/
+	overflow:hidden;
+}
+
+.circle{
+	width:100px;
+	height:100px;
+	background-color:#FC0;
+	border-radius:50px;
+	position:relative;
+}
+
+#circle_left_top{
+	float:left;
+	top:-50px;
+	left:-50px;
+}
+
+#circle_right_top{
+	float:right;
+	top:-50px;
+	left:50px;
+}
+
+#circle_left_bottom{
+	clear:both;
+	float:left;
+	top:50px;
+	left:-50px;
+}
+
+#circle_right_bottom{
+	float:right;
+	top:50px;
+	left:50px;
+}
