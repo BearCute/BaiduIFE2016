@@ -3,7 +3,7 @@
 <meta charset="utf-8" />
 <head>
 	<title>task1:html webpage</title>
-	<link rel="stylesheet" type="text/css" href="task2.css" />
+	<link rel="stylesheet" type="text/css" href="task5.css" />
 </head>
 <body>
 <header>
@@ -15,8 +15,57 @@
 		<li><a href="http://www.baidu.com" target="_blank">导航链接四</a></li>
 	</ul>
 </header>
-<div id="body_main">
 
+<div id="body_main">
+<div id="body_right">
+	<aside>
+		<h1>这里以后是一个侧栏，这是侧栏的标题</h1>
+		<form method="post" action="">
+			<div>
+				<label for="">请输入邮箱地址</label>
+				<input type="email" name="mail" placeholder="这是一个文本输入框" />
+				<p class="tips">邮箱地址按要求格式输入</p>
+			</div>
+
+			<div>
+				<label for="">请输入密码</label>
+				<input type="password" name="password" placeholder="输入密码" />
+			</div>
+			<div>
+				<label for="">请重复输入密码</label>
+				<input type="password" name="password" placeholder="输入密码" />
+				<p class="tips">密码请为6-16的英文数字</p>
+			</div>
+
+			<div>
+				<label for="">性别</label>
+				<input type="radio" name="sex" value="male" checked="checked" />男
+				<input type="radio" name="sex" value="female" />女
+			</div>
+			<div>
+				<label for="">城市</label>
+				<select name="city">
+					<option value="beijing">北京</option>
+					<option value="shanghai">上海</option>
+					<option value="guangzhou">广州</option>
+				</select>
+			</div>
+			<div>
+				<label for="">爱好</label>
+				<input type="checkbox" name="hobby" value="sports" />运动
+				<input type="checkbox" name="hobby" value="art" />艺术
+				<input type="checkbox" name="hobby" value="science">科学
+			</div>
+			<div>
+				<label for="">个人描述</label>
+				<textarea placeholder="这是一个多行输入框"></textarea>
+			</div>
+			<div>
+				<button value="submit" type="submit">确认提交</button>
+			</div>
+		</form>
+	</aside>
+</div>
 <div id="body_left">
 	<article name="article1">
 	<h1>文章一级标题</h1>
@@ -143,55 +192,6 @@
 		</tfoot>
 	</table>
 	</article>
-</div>
-<div id="body_right">
-	<aside>
-		<h1>这里以后是一个侧栏，这是侧栏的标题</h1>
-		<form method="post" action="">
-			<div>
-				<label for="">请输入邮箱地址</label>
-				<input type="email" name="mail" placeholder="这是一个文本输入框" />
-				<p class="tips">邮箱地址按要求格式输入</p>
-			</div>
-
-			<div>
-				<label for="">请输入密码</label>
-				<input type="password" name="password" placeholder="输入密码" />
-			</div>
-			<div>
-				<label for="">请重复输入密码</label>
-				<input type="password" name="password" placeholder="输入密码" />
-				<p class="tips">密码请为6-16的英文数字</p>
-			</div>
-
-			<div>
-				<label for="">性别</label>
-				<input type="radio" name="sex" value="male" checked="checked" />男
-				<input type="radio" name="sex" value="female" />女
-			</div>
-			<div>
-				<label for="">城市</label>
-				<select name="city">
-					<option value="beijing">北京</option>
-					<option value="shanghai">上海</option>
-					<option value="guangzhou">广州</option>
-				</select>
-			</div>
-			<div>
-				<label for="">爱好</label>
-				<input type="checkbox" name="hobby" value="sports" />运动
-				<input type="checkbox" name="hobby" value="art" />艺术
-				<input type="checkbox" name="hobby" value="science">科学
-			</div>
-			<div>
-				<label for="">个人描述</label>
-				<textarea placeholder="这是一个多行输入框"></textarea>
-			</div>
-			<div>
-				<button value="submit" type="submit">确认提交</button>
-			</div>
-		</form>
-	</aside>
 </div>
 </div>
 

@@ -37,11 +37,10 @@ header ul li a{
 
 header ul li:hover{
 	font-weight:bold;
-	/*font-style:italic;*/
 	background-color:#444;
 }
 
-article,aside,div#pic{
+article,aside,#pic{
 	display:block;
 	margin:25px;
 	padding:22px;
@@ -51,11 +50,10 @@ article,aside,div#pic{
 
 }
 
-article h1,span.pic{
+article h1,#pic h1{
 	margin:20px 0;
 	font-weight:bold;
 	font-size:28px;
-	/*font-family:sans-serif;*/
 	color:#444;
 }
 
@@ -91,11 +89,10 @@ article a{
 	letter-spacing:1.5px;
 }
 
-div#pic span{
+#pic span{
 	display:block;
 	width:340px;
 	border:1px solid #BFBFBF;
-	/*margin:30px 0 30px 50px;*/
 	padding-bottom:15px;
 	text-align:center;
 	position:relative;
@@ -103,13 +100,14 @@ div#pic span{
 	top:20px;
 	margin-bottom:30px;
 }
-div#pic figcaption{
+
+#pic figcaption{
 	margin-top:20px;
 	margin-bottom:20px;
 	font-size:16px;
 }
 
-div#pic img{
+#pic img{
 	width:300px;
 	height:180px;
 }
@@ -148,7 +146,6 @@ article li{
 
 aside h1{
 	font-size:17px;
-	/*letter-spacing:1.5px;*/
 	border-left:4px solid #ccc;
 	line-height:37px;
 	border-radius:1px;

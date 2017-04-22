@@ -1,0 +1,107 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+body{
+	overflow:auto;
+}
+
+/*注意一个模块要设在窗口中一个特定位置时的方法*/
+#container{
+	background-color:#DDD;
+	border:1px solid #999;
+	box-shadow:4px 4px 1px #999;
+	width:600px;
+	position:absolute;
+	top:20%;
+	left:50%;
+	margin-left:-300px;
+	overflow:auto;
+}
+
+.box{
+	border:1px solid #DDD;
+	background:#FFF;
+	padding:5px;
+	margin:20px;
+}
+/*--------------------------------------*/
+/*
+.box{position:relative;}
+	
+//纯英文环境下会遇到需要设置这个参数
+//word-wrap:break-word;
+
+//这里应该是相对于container的定位
+//position:absolute;
+
+
+//用position实现布局
+//完全只能通过计算位置来确定布局
+
+#two{
+	width:150px;
+	left:410px;
+	top:-158px;
+}
+
+#one{margin-right:190px;}
+*/
+
+/*-------------------------------------*/
+
+/*//用浮动来做 则在html中右浮动要先写
+//左方框就保持原位置即可*/
+
+
+/*//1.在两个模块都是固定宽度的情况下会理想浮动
+切左浮动的left要显示设置*/
+/*#one{
+	float:left;
+	width:150px;
+}
+
+#two{
+	float:right;
+	width:150px;
+}*/
+
+
+
+/*//2.在只有一个模块宽度一定的情况下右浮动在html中要先写
+且左边位置的模块只需要留出margin */
+#one{
+	margin-right:190px;
+}
+
+#two{
+	float:right;
+	width:150px;
+}
+
+
+/*---------------------------------*/
+
+/*
+//三栏浮动，右浮动模块在html中要写在最前面
+//左右浮动模块大小是固定设定的
+//中间栏完全靠margin留出位置
+#one{
+	width:150px;
+	height:380px;
+	float:left;
+}
+
+#three{
+	width:150px;
+	height:380px;
+	float:right;
+}
+
+#two{
+	margin-left:190px;
+	margin-right:190px;
+}
+*/

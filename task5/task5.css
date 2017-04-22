@@ -1,0 +1,253 @@
+/*//questions:
+//1/when the brower's window is lower,the layout is confusion
+//2/How to use the float to realiz the layout is not resolved.*/
+
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial,"Times New Roman",sans-serif;
+ 	box-sizing:border-box;   
+}
+
+#body_main{
+	background-color:#dedede;
+	padding:20px;
+	position:relative;
+	overflow:auto;
+}
+
+/*use float*/
+/*#body_main{
+	background-color:#dedede;
+	padding:20px;
+	overflow:auto;
+}
+
+#body_right{
+	width:400px;
+	float:right;
+}*/
+
+/*标题栏-------------------------*/
+header{
+	height:60px;
+	width:100%;
+	background-image:url("eg_img/5.jpg");
+	background-repeat:no-repeat;
+	background-color:#000;
+	background-position:left;
+}
+
+header ul{
+	position:absolute;
+	right:5px;
+	top:0;
+}
+
+header ul li{
+	display:inline-block;
+	float:left;
+	padding:40px 10px 0 10px;
+}
+
+header ul li a{
+	text-decoration:none;
+	font-size:15px;
+	color:#FFF;
+	-webkit-transition:all 0.3s linear;
+}
+
+header ul li:hover{
+	background-color:#DDD;
+}
+
+header ul li a:hover{
+	color:#000;
+	-webkit-transition:all 0.2s linear;
+}
+
+/*模块设置······················*/
+article,aside{
+	margin-bottom:20px;
+	padding:20px;
+	background-color:#fff;
+	border:1px solid #BFBFBF;
+	box-shadow:4px 4px 2px #aaa;
+/*	div设置浮动后无法撑开外部DIV的解决办法:
+	1/在外部div加上overflow:auto;
+	2/在浮动结束的容器后面加上:clear:both;*/
+	overflow:auto;
+}
+
+/*左侧部分---------------*/
+#body_left{
+	margin-right:420px;
+	min-width:350px;
+}
+
+article h1{
+	font-weight:bold;
+	font-size:28px;
+	color:#444;
+}
+
+article h2{
+	margin:10px 0;
+	font-weight:bold;
+	font-size:18px;
+	color:#777;
+}
+
+article address{
+	margin:10px 0;
+	font-style:italic;
+	font-size:15px;
+	color:#777;
+}
+
+article p{
+	font-size:16px;
+	text-indent:32px;
+}
+
+article img{
+	margin:20px 0;
+	width:70%;
+	height:40%;
+}
+
+article a{
+	color:#000;
+	font-style:italic;
+	text-decoration:underline;
+	letter-spacing:1.5px;
+}
+
+article ul li{
+	list-style-position:inside;
+}
+
+article figure span{
+	width:300px;
+	height:220px;
+	border:1px solid #BFBFBF;
+	text-align:center;
+	vertical-align:middle;
+	float:left;
+	margin:10px;
+	padding:10px;
+}
+
+article figure span img{
+	width:280px;
+	height:170px;
+	margin:0;
+}
+
+article figure span figcaption{
+	font-size:16px;
+}
+
+article ol{
+	display:block;
+	position:relative;
+	left:50px;
+	font-weight:bold;
+}
+
+article ol li{
+	margin:5px 0;
+}
+
+article table{
+	width:100%;
+	text-align:left;
+	border:1px solid #ccc;
+	border-collapse:collapse;
+	line-height:24px;
+	font-size:14px;
+}
+
+article table thead{
+	background-color:#000;
+	color:#fff;
+}
+
+article table tfoot{
+	background-color:#ccc;
+}
+
+footer p{
+	clear:both;
+	width:100%;
+	height:50px;
+	text-align:center;
+	background-color:#000;
+	color:#fff;
+}
+
+/*右侧部分------------------*/
+#body_right{
+	position:absolute;
+	right:20px;
+	top:20px;
+}
+
+aside{
+	width:400px;
+	overflow:hidden;
+}
+
+aside h1{
+	font-size:17px;
+	border-left:4px solid #ccc;
+	line-height:35px;
+	border-radius:1px;
+	padding-left:12px;
+	margin:10px;
+}
+
+aside form{
+	line-height:32px;
+	font-size:15px;
+	color:#000;
+	/*padding:0 10px;*/
+}
+
+aside form div{
+	margin:10px;
+	position:relative;
+}
+
+aside form label{
+	width:110px;
+	float:left;
+	text-align:right;
+	margin-right:8px;
+}
+
+aside form p.tips{
+	font-size:15px;
+	color:#777;
+	position:relative;
+	left:118px;
+	top:-7px;
+}
+
+aside form textarea{
+	width:50%;
+	line-height:300%;
+}
+
+aside form button[type="submit"]{
+	width:100%;
+	height:32px;
+	border:1px solid black;
+	border-radius:6px;
+	text-align:center;
+	background-color:#000;
+	color:white;
+	font-size:20px;
+	margin:auto;
+	margin-top:20px;
+}
