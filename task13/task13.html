@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task13</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<label>请输入北京今天空气质量：<input type="text" id="aqi-input"></label>
+	<button id="button">确认填写</button>
+
+	<div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+	<script type="text/javascript">
+		document.getElementById("button").onclick  = function(){
+			var num;
+			document.getElementById("aqi-display").innerHTML = 
+			isNaN(num=Number(document.getElementById("aqi-input").value.trim()))?'请输入数值':num;
+			
+			// var test = "2133";
+			// var test = "abc";
+			// var test1 = Number(test);
+			// document.write("<b><b>"+test1);
+		}
+	</script>
+</body>
+</html>

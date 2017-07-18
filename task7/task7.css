@@ -27,8 +27,8 @@ nav .nav_left{
 	text-align:center;
 	position:relative;
 	left:80px;
-	background:url(eg_img/icon-1.png) no-repeat left;
-	background-size:20px;
+	background-color:#fff;
+	/*background:url(eg_img/icon-1.png) no-repeat left;*/
 }
 
 nav .nav_left h1{
